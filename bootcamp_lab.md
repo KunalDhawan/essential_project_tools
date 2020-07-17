@@ -1,4 +1,4 @@
-# Lab1
+## Lab1
 
 * Create a simple python script with a Factorial class with the following interfaces:
 
@@ -16,7 +16,7 @@ class Factorial():
 * Argument 'n' shall be passed to the script as part of 'make run' target 
 
  
-# Lab2
+## Lab2
 
 * Start from the previous lab.
 * Replace the earlier create script with a FastAPI server (single file server.py) and update the Makefile 'run' target to run a FastAPI webserver.
@@ -35,7 +35,7 @@ class Factorial():
 * Add a 'package' target which will create a docker image of the service
  
 
-# Lab3
+## Lab3
 
 * Start from the previous lab.
 * Breakdown the earlier server.py into existing git service structure i.e. api, models, services structure. 
