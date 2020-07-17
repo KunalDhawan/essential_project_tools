@@ -30,6 +30,8 @@ The various tools covered-
     - https://blog.newrelic.com/technology/microservices-what-they-are-why-to-use-them/
     - https://www.restapitutorial.com/
 
+* **FastAPI**
+    - https://fastapi.tiangolo.com/tutorial/first-steps/
 * **Docker**
     - https://www.katacoda.com/courses/docker
     - https://www.katacoda.com/ben_hall/scenarios/1
@@ -42,7 +44,9 @@ The various tools covered-
     - https://medium.com/analytics-vidhya/manage-ml-deployments-like-a-boss-deploy-your-first-ab-test-with-sklearn-kubernetes-and-b10ae0819dfe
 
 * **Kubernetes**
-    - 
+    - Need to add link
 
 * **Helm**
     - https://www.katacoda.com/javajon/courses/kubernetes-pipelines/helm
+
+I will be working on a demo project which has been explained in more detail in bootcamp_labs.md
