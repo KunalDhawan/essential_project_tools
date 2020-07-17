@@ -49,4 +49,4 @@ The various tools covered-
 * **Helm**
     - https://www.katacoda.com/javajon/courses/kubernetes-pipelines/helm
 
-I will be working on a demo project which has been explained in more detail in bootcamp_labs.md
+To make all these theoritical concepts more clear, I will be working on a demo project utilizing all these technologies which has been explained in more detail in bootcamp_labs.md
