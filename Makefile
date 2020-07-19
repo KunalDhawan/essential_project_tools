@@ -21,3 +21,4 @@ input_number = 5
 run:
 	$(CONDA_ACTIVATE) python factorial_printing.py $(input_number)
 
+# PS: you can over-write this variable to calculate the fatorial of any input at run time. For eg to get factorial of 7 you only need to do 'make run input_number=7'
