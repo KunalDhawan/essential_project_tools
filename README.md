@@ -33,6 +33,7 @@ The various tools covered-
 * **FastAPI**
     - https://fastapi.tiangolo.com/tutorial/first-steps/
 * **Docker**
+    - https://docker-curriculum.com/
     - https://www.katacoda.com/courses/docker
     - https://www.katacoda.com/ben_hall/scenarios/1
 
