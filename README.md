@@ -27,6 +27,7 @@ The various tools covered-
     - https://git-lfs.github.com/
 
 * **Microservices**
+    - https://dev.to/paurakhsharma/microservice-in-python-using-fastapi-24cc
     - https://blog.newrelic.com/technology/microservices-what-they-are-why-to-use-them/
     - https://www.restapitutorial.com/
 
