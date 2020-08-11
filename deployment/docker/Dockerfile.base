@@ -1,0 +1,42 @@
+ARG BASE_IMAGE="continuumio/miniconda3:latest"
+
+FROM ${BASE_IMAGE}
+
+# SHELL ["/bin/bash", "-c"]
+
+ARG app_location='/usr/src/app'
+ARG PIP_EXTRA_INDEX_URL='https://pypi.org/simple'
+ARG APP_CONDA_ENV_NAME='venv-app'
+ENV APP_CONDA_ENV_NAME=$APP_CONDA_ENV_NAME
+ENV CONDA_BIN='/opt/conda/bin/conda'
+
+# set directory where CMD will execute
+WORKDIR ${app_location}
+
+RUN apt-get update \
+    && apt-get -y install --no-install-recommends apt-utils dialog make build-essential \
+    # Clean up
+    && apt-get autoremove -y \
+    && apt-get clean -y \
+    && rm -rf /var/lib/apt/lists/*
+
+# RUN $CONDA_BIN update -n base -c defaults conda
+
+# copy files
+RUN echo > ${app_location}/requirements-dev.txt
+ADD ./requirements.txt ${app_location}/requirements.txt
+ADD ./environment.yaml ${app_location}/environment.yaml
+ADD ./Makefile* ${app_location}/
+#ADD ./scripts/* ${app_location}/scripts/
+
+ADD ./VERSION ${app_location}
+
+# install dependencies
+RUN $CONDA_BIN env update -n $APP_CONDA_ENV_NAME -f environment.yaml \
+    && $CONDA_BIN clean --yes --all
+
+RUN conda init
+
+# add meta-information
+ARG GIT_COMMIT=unspecified
+LABEL git_commit=$GIT_COMMIT
