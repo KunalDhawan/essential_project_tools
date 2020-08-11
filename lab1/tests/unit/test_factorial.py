@@ -47,4 +47,5 @@ def test_negative_input():
     factorial_output = factorial_object.compute(number)
 
     assert factorial_output == expected_output
+    
 
