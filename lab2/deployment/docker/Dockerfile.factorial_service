@@ -1,0 +1,26 @@
+ARG BASE_IMAGE="jioai/health/base-docker-image"
+ARG BASE_IMAGE_TAG="latest"
+
+FROM ${BASE_IMAGE}:${BASE_IMAGE_TAG}
+
+ARG app_location='/usr/src/app'
+ARG PIP_EXTRA_INDEX_URL='https://pypi.org/simple'
+ARG APP_CONDA_ENV_NAME='base'
+ENV APP_CONDA_ENV_NAME=$APP_CONDA_ENV_NAME
+ENV CONDA_BIN='/opt/conda/bin/conda'
+
+# set directory where CMD will execute
+WORKDIR ${app_location}
+
+ADD ria ${app_location}/ria
+
+# add meta-information
+ARG GIT_COMMIT=unspecified
+LABEL git_commit=$GIT_COMMIT
+ENV GIT_COMMIT=$GIT_COMMIT
+
+#ARG HTTP_HOST='0.0.0.0'
+#ARG HTTP_PORT=8080
+
+#EXPOSE ${HTTP_PORT}
+CMD make run

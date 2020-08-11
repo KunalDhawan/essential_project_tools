@@ -5,7 +5,7 @@ The aim of this respository is to consolidate materials for all essential tools 
 The various tools covered- 
 
 * **Make**
-    - https://opensource.com/article/18/8/what-how-makefile
+    - <write a brief> https://opensource.com/article/18/8/what-how-makefile
     - https://krzysztofzuraw.com/blog/2016/makefiles-in-python-projects.html
     - https://blog.horejsek.com/makefile-with-python/
     - https://makefiletutorial.com/
@@ -32,10 +32,7 @@ The various tools covered-
 
 * **FastAPI**
     - https://fastapi.tiangolo.com/tutorial/first-steps/
-
 * **Docker**
-    - https://docker-curriculum.com/
-    - https://championshuttler.github.io/docker-basicLearning/
     - https://www.katacoda.com/courses/docker
     - https://www.katacoda.com/ben_hall/scenarios/1
 
@@ -47,7 +44,7 @@ The various tools covered-
     - https://medium.com/analytics-vidhya/manage-ml-deployments-like-a-boss-deploy-your-first-ab-test-with-sklearn-kubernetes-and-b10ae0819dfe
 
 * **Kubernetes**
-    - https://github.com/knrt10/kubernetes-basicLearning
+    - Need to add link
 
 * **Helm**
     - https://www.katacoda.com/javajon/courses/kubernetes-pipelines/helm
