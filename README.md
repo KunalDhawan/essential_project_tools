@@ -27,6 +27,7 @@ The various tools covered-
     - https://git-lfs.github.com/
 
 * **Microservices**
+    - https://dev.to/paurakhsharma/microservice-in-python-using-fastapi-24cc
     - https://blog.newrelic.com/technology/microservices-what-they-are-why-to-use-them/
     - https://www.restapitutorial.com/
 
@@ -35,7 +36,10 @@ The various tools covered-
 
 * **Docker**
     - https://docker-curriculum.com/
+<<<<<<< HEAD
     - https://championshuttler.github.io/docker-basicLearning/
+=======
+>>>>>>> 6001458870a1929d225ce4e899fb18459c8e262c
     - https://www.katacoda.com/courses/docker
     - https://www.katacoda.com/ben_hall/scenarios/1
 
