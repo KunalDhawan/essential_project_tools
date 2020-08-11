@@ -36,10 +36,7 @@ The various tools covered-
 
 * **Docker**
     - https://docker-curriculum.com/
-<<<<<<< HEAD
     - https://championshuttler.github.io/docker-basicLearning/
-=======
->>>>>>> 6001458870a1929d225ce4e899fb18459c8e262c
     - https://www.katacoda.com/courses/docker
     - https://www.katacoda.com/ben_hall/scenarios/1
 
